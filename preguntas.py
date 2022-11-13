@@ -135,9 +135,9 @@ def pregunta_10():
      """
 
 
-     tablaN = tbl0[["_c1", "_c2"]].copy().set_index("_c2").groupby("_c1")
-     proc = {g:":".join(sorted([str(x) for x in c])) for g,c in tablaN.groups.items()}
-     return pd.DataFrame({"_c1":proc.keys(), "_c2":proc.values()}).set_index("_c1")
+    tablaN = tbl0[["_c1", "_c2"]].copy().set_index("_c2").groupby("_c1")
+    proc = {g:":".join(sorted([str(x) for x in c])) for g,c in tablaN.groups.items()}
+    return pd.DataFrame({"_c1":proc.keys(), "_c2":proc.values()}).set_index("_c1")
 
  def pregunta_11():
      """
