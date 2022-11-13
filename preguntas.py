@@ -140,7 +140,7 @@ def pregunta_10():
     return pd.DataFrame({"_c1":proc.keys(), "_c2":proc.values()}).set_index("_c1")
 
  def pregunta_11():
-     """
+    """
     Construya una tabla que contenga _c0 y una lista separada por ',' de los valores de
     la columna _c4 del archivo `tbl1.tsv`.
     Rta/
